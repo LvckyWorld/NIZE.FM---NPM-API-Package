@@ -23,7 +23,9 @@ publish:
   script:
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
     - npm whoami
-    - ls -la
     - npm run ci-unpublish
+    - ls -la
     - npm run build
+    - ls -la
+    - npm whoami
     - npm run ci-publish
