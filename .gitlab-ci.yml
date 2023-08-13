@@ -21,4 +21,5 @@ publish:
     - npm whoami
     - ls -la
     - npm run ci-unpublish
+    - npm run build
     - npm run ci-publish

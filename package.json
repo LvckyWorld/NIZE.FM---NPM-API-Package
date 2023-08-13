@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install && npx tsc",
     "ci-unpublish": "npm unpublish --force",
-    "ci-publish": "npm run build && npm publish --access public"
+    "ci-publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
