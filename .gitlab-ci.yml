@@ -1,0 +1,21 @@
+image: node:16
+
+stages:
+  - test
+  - publish
+
+cache:
+  paths:
+    - node_modules/
+
+test:
+  script:
+    - npm ci
+
+publish:
+  stage: publish
+  only:
+    - /^(deploy-prod-)\d{8}.\d{4}$/
+  script:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+    - npm run ci-publish
