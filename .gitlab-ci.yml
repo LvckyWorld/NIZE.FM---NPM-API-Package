@@ -18,7 +18,7 @@ publish:
     - /^(deploy-prod-)\d{8}.\d{4}$/
   script:
     - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-    - cat .npmrc
+    - npm whoami
     - ls -la
     - npm run ci-unpublish
     - npm run ci-publish
