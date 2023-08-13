@@ -1,6 +1,6 @@
 {
   "name": "@nize.fm/api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The official NPM API Package of the NIZE.FM API",
   "main": "lib/NizeAPI.js",
   "types": "types/NizeAPI.d.ts",
